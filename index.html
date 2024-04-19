@@ -37,16 +37,10 @@
                     <h2>&#10148; TASKS</h2>
                     <ul>
                         <li class="bcwhite" v-for="(curToDo, index) in toDos">
-                            <span class="done" :class="(curToDo.done === true) ? 'done' : 'undone'">&check;</span>
-                            <span class="lthr">Quarterly Newsletter</span>
+                            <span class="done" :class="(curToDo.done === true) ? 'done' : 'undone'">{{(curToDo.done === true) ? '&check;' : '&cross;'}}</span>
+                            <span :class="(curToDo.done === true) ? 'lthr' : ''">{{curToDo.text}}</span>
                             <!-- <span class="label-blue bdr lthr">Editorial</span> -->
                         </li>
-                    </ul>
-                    </li>
-                    <li class="bcwhite">
-                        <span class="undone">&#10008;</span>
-                        <span>Schedule meeting with Alex</span>
-                    </li>
                     </ul>
                 </div>
                 <!-- /Lista annidata -->
