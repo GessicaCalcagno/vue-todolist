@@ -37,7 +37,7 @@
                     <h2>&#10148; TASKS</h2>
                     <ul>
                         <li class="bcwhite" v-for="(curToDo, index) in toDos">
-                            <span class="done">&#10004;</span>
+                            <span class="done" :class="(curToDo.done === true) ? 'done' : 'undone'">&check;</span>
                             <span class="lthr">Quarterly Newsletter</span>
                             <!-- <span class="label-blue bdr lthr">Editorial</span> -->
                         </li>
