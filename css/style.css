@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #EDF2F7;
+    margin-bottom: 30px;
+}
+
+.logo {
+    text-align: center;
+}
+
+/* /Header */
+
+/* CONTAINER */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #EDF2F7;
+}
+/* TAG INPUT */
+.bt {
+    text-align: center;
+    padding: 10px; 
+}
+
+.search{
+    font-size: 8px;  
+    border: 0;  
+    border-radius: 3px;
+}
+
+.buttontask {
+    background-color: #13ABF0;
+    border: 0;
+    border-radius: 3px;
+    color: #EDF2F7;
+    font-size: 6px;
+    padding: 2px;
+}
+/* -TAG INPUT */
+
+/* LISTA NESTED */
+ol,li {
+    list-style: none
+}
+
+.container-list {
+    border-top: solid white 3px;
+    padding: 10px;
+}
+
+h2 {
+    margin-left: 10px;
+    font-size: 8px;
+}
+
+li {
+    margin-left: 10px;
+    font-size: 6px;
+    padding: 2px;
+}
+
+/* CHECK E CROSS */
+.done{    
+    border: 0.5px solid green;
+    color: green;
+    text-decoration: none;
+}
+.undone{
+    border: 0.5px solid red;
+    color: red;   
+}
+.done,.undone{
+    font-size: 4px;
+    border-radius: 50%;
+    padding: 2px 2px;
+    margin: 0 10px;
+}
+
+/* SFONDO ''LI'' */
+.bcwhite {
+    background-color: white;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+/* LINE THROUGH */
+.lthr{
+text-decoration: line-through;
+}
+
+/* SFONDO ETICHETTE */
+.label-blue {
+    background-color: #13ABF0;
+}
+
+.label-violet {
+    background-color: #AC60E7;
+}
+
+.label-green1 {
+    background-color: #2CC6AB;
+}
+
+.label-orange {
+    background-color: orange;
+}
+
+.label-fucsia {
+    background-color: fuchsia;
+    
+}
+
+.label-green2 {
+    background-color: #A3D116;
+}
+
+/* BORDO ETICHETTE */
+.bdr {
+    border-radius: 5px;
+    text-align: center;
+    font-size: 6px;
+    padding: 2px;
+}
+
+/* vertical-align: middle; */

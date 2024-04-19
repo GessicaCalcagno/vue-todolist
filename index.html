@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Vue Js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo TodoList" />
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <div id="app">
+        <main>
+            <!-- Container -->
+            <div class="container">
+                <!-- input-button  -->
+                <div class="bt">
+                    <input class="search" name="todocheck" placeholder="e.s: Fare la spesa.." />
+                    <input class="buttontask" type="button" value="Add Task" />
+                </div>
+                <!-- /input-button  -->
+
+                <!-- Lista annidata  -->
+                <div class="container-list">
+                    <h2>&#10148; TASKS</h2>
+                    <ul>
+                        <li class="bcwhite" v-for="(curToDo, index) in toDos">
+                            <span class="done">&#10004;</span>
+                            <span class="lthr">Quarterly Newsletter</span>
+                            <!-- <span class="label-blue bdr lthr">Editorial</span> -->
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="bcwhite">
+                        <span class="undone">&#10008;</span>
+                        <span>Schedule meeting with Alex</span>
+                    </li>
+                    </ul>
+                </div>
+                <!-- /Lista annidata -->
+            </div>
+            <!-- /Container -->
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
